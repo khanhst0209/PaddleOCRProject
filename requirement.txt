@@ -1,0 +1,6 @@
+Flask
+PaddleOCR
+numpy
+Pillow
+opencv-python
+gunicorn
