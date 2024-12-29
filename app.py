@@ -8,7 +8,7 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-# Khởi tạo OCR với mô hình tùy chỉnh
+
 ocr = PaddleOCR(
     det_model_dir='models/det',
     rec_model_dir='models/rec2',
@@ -50,6 +50,14 @@ def ocr_process():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+
+@app.route('/', methods=['POST'])
+def EmptyAPI():
+    return jsonify({
+            'result': 'connect successfully',
+        })
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)
