@@ -12,7 +12,7 @@ app = Flask(__name__)
 ocr = PaddleOCR(
     det_model_dir='models/det',
     rec_model_dir='models/rec2',
-    use_gpu=True,
+    use_gpu=False,
 )
 
 @app.route('/ocr', methods=['POST'])
