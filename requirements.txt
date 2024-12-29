@@ -1,7 +1,7 @@
-Flask
+flask
 paddleocr==2.9.1
 paddlepaddle==2.6.2
 numpy
-Pillow
+pillow
 opencv-python
 gunicorn
