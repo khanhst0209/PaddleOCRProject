@@ -1,5 +1,5 @@
 Flask
-PaddleOCR
+paddleocr
 numpy
 Pillow
 opencv-python
